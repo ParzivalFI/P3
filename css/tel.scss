@@ -1,0 +1,275 @@
+  body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "roboto", sans-serif;
+  }
+
+  .logo {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .tailleLogo {
+    width: 200px;
+    height: 36px;
+  }
+
+  .ville {
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 30%;
+    background-color: #eaeaea;
+
+    .fa-solid {
+      padding-right: 5%;
+    }
+
+  }
+
+  .description {
+    text-align: center;
+    background-color: #F6F6F6;
+    height: 270px;
+    padding-top: 1px;
+  }
+
+  .soustitre {
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .sizeTitle {
+    font-size: 30px;
+  }
+
+  .Texteville {
+    font-weight: 400;
+  }
+
+  .button {
+    width: 218px;
+    height: 50px;
+    margin: 20px 0px;
+    background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+  }
+
+  /* *********************************** fonctionnement **************************************** */
+  .padding5 {
+    padding-left: 5%;
+  }
+
+  // .rectancleFonct {
+  //   width: 318px;
+  //   height: 72px;
+  //   background-color: #F6F6F6;
+  //   padding: 20px 20px;
+  //   margin-bottom: 20px;
+  //   border-radius: 40px;
+  //   display: flex;
+  //   justify-content: space-around;
+  //   align-items: center;
+  //   box-shadow: 0px 4px 10px 0px black;
+
+  // }
+
+
+
+  .fonct {
+
+    padding-left: 5%;
+
+    .choix {
+      border: 2px solid #F2F2F2;
+      width: 335px;
+      height: 73px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F6F6F6;
+      margin-bottom: 20px;
+      box-shadow: 3px 3px 0px 1px #00000006;
+
+      .cercle {
+        width: 24px;
+        height: 24px;
+        border-radius: 20px;
+        left: 10px;
+        position: absolute;
+        background-color: #9356DC;
+        display: grid;
+        place-items: center;
+      }
+
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+    }
+
+
+
+    .fa-solid {
+      padding-right: 5%;
+    }
+  }
+
+
+
+
+
+
+
+
+  //  *********************** restaurant ******************* 
+  .h2 {
+
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 0;
+
+  }
+
+  .carte {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .menu {
+    background-color: #F6F6F6;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+
+    .menu_cartes {
+      display: grid;
+      gap: 18px;
+
+      .carte {
+        height: 250px;
+        position: relative;
+
+        &_image {
+          width: 100%;
+          height: 165px;
+          border-radius: 15px 15px 0px 0px;
+          background-size: cover;
+          object-fit: cover;
+        }
+
+        &_nouveau {
+          background-color: #99E2D0;
+          color: #008766;
+          width: 80px;
+          height: 29px;
+          top: 13px;
+          left: 248px;
+          position: absolute;
+          border-radius: 2px;
+          display: grid;
+          place-items: center;
+        }
+
+        &_description {
+          background-color: white;
+          height: 70px;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          border-radius: 0 0 15px 15px;
+
+          .carte_description-NomDuMenu,
+          .carte_description-ville {
+            margin: 0;
+          }
+
+          .carte_description-NomDuMenu {
+            padding-top: 5px;
+            margin-left: 18px;
+
+          }
+
+          .carte_description-ville {
+            padding-top: 5px;
+            font-weight: 300;
+            margin-left: 18px;
+          }
+
+
+
+        }
+
+
+      }
+
+    }
+  }
+
+  .footer {
+    background-color: #353535;
+    color: white;
+    height: 186px;
+    // display: flex;
+    gap: 10px;
+    padding-left: 0;
+
+    .footer_image {
+      filter: invert(100%);
+      width: 137px;
+      height: 27px;
+      padding-left: 5%;
+      margin-left: 0px;
+      margin-bottom: 5px;
+      margin-top: 25px;
+
+    }
+
+    .footerdetait {
+      padding-left: 5%;
+      line-height: 1.5;
+    }
+
+    .marge {
+      margin-left: 35px;
+      margin-left: 0px;
+    }
+
+    .Footercontact {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+
+
+
+  @media (min-width : 1000px) {
+
+
+
+  }
