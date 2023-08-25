@@ -80,6 +80,59 @@ body {
   margin-right: 20px;
   border-radius: 15px;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
+  animation: animeliste 1s;
+}
+
+@keyframes animeliste {
+  0% {
+    transform: translate(100px, 100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.ralenti1 {
+  animation-delay: 0.2s;
+}
+
+.ralenti2 {
+  animation-delay: 0.4s;
+}
+
+.ralenti3 {
+  animation-delay: 0.6s;
+}
+
+.ralenti4 {
+  animation-delay: 0.8s;
+}
+
+.ralenti5 {
+  animation-delay: 1s;
+}
+
+.ralenti6 {
+  animation-delay: 1.2s;
+}
+
+.ralenti7 {
+  animation-delay: 1.4s;
+}
+
+.ralenti8 {
+  animation-delay: 1.6s;
+}
+
+.ralenti9 {
+  animation-delay: 1.8s;
+}
+
+.ralenti10 {
+  animation-delay: 2s;
+}
+
+.ralenti11 {
+  animation-delay: 2.2s;
 }
 
 .lemenu {
@@ -89,19 +142,6 @@ body {
   text-overflow: ellipsis;
   position: relative;
   transition: all 1s;
-}
-.lemenu_clique {
-  display: flex;
-  width: 0px;
-  align-items: center;
-  justify-content: center;
-  background-color: #99E2D0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  transition: all 2s;
-  border-radius: 0 15px 15px 0;
 }
 
 .margin0 {
