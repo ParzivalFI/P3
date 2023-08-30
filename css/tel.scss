@@ -29,7 +29,7 @@
       height: 50px;
       border: gray solid 5px;
       border-top-color: #FF79DA;
-      border-bottom-color:#9356DC;
+      border-bottom-color: #9356DC;
       border-radius: 50%;
       animation: charge 1s linear infinite;
     }
@@ -142,6 +142,12 @@
 
     padding-left: 5%;
 
+@media(min-width:1000px) {
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+      }
+
     .choix {
       border: 2px solid #F2F2F2;
       width: 335px;
@@ -154,6 +160,8 @@
       margin-bottom: 20px;
       box-shadow: 3px 3px 0px 1px #00000006;
 
+      
+
       .cercle {
         width: 24px;
         height: 24px;
@@ -165,10 +173,6 @@
         place-items: center;
       }
 
-
-      &:hover {
-        transform: scale(1.05);
-      }
 
     }
 
@@ -212,6 +216,13 @@
       display: grid;
       gap: 18px;
 
+      @media(min-width:1000px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        width: 100%;
+      }
+
       .carte {
         height: 250px;
         position: relative;
@@ -229,8 +240,8 @@
           color: #008766;
           width: 80px;
           height: 29px;
-          top: 13px;
-          left: 248px;
+          top: -133px;
+          right: 12px;
           position: absolute;
           border-radius: 2px;
           display: grid;

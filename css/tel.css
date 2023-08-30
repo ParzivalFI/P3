@@ -116,6 +116,13 @@ body {
 .fonct {
   padding-left: 5%;
 }
+@media (min-width: 1000px) {
+  .fonct {
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+  }
+}
 .fonct .choix {
   border: 2px solid #F2F2F2;
   width: 335px;
@@ -137,9 +144,6 @@ body {
   background-color: #9356DC;
   display: grid;
   place-items: center;
-}
-.fonct .choix:hover {
-  transform: scale(1.05);
 }
 .fonct .fa-solid {
   padding-right: 5%;
@@ -168,6 +172,14 @@ body {
   display: grid;
   gap: 18px;
 }
+@media (min-width: 1000px) {
+  .menu .menu_cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    width: 100%;
+  }
+}
 .menu .menu_cartes .carte {
   height: 250px;
   position: relative;
@@ -185,8 +197,8 @@ body {
   color: #008766;
   width: 80px;
   height: 29px;
-  top: 13px;
-  left: 248px;
+  top: -133px;
+  right: 12px;
   position: absolute;
   border-radius: 2px;
   display: grid;
