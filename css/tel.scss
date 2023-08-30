@@ -6,6 +6,49 @@
     font-family: "roboto", sans-serif;
   }
 
+  .chargement {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    background-color: white;
+    animation: cercle 3500ms 1 forwards;
+    animation-delay: 1500ms;
+
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      border: gray solid 5px;
+      border-top-color: #FF79DA;
+      border-bottom-color:#9356DC;
+      border-radius: 50%;
+      animation: charge 1s linear infinite;
+    }
+  }
+
+  @keyframes cercle {
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+
+  @keyframes charge {
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+
   .logo {
     text-align: center;
     margin-top: 30px;
@@ -240,7 +283,7 @@
     top: 20px;
   }
 
-.coeurplein {
+  .coeurplein {
     font-size: 25px;
     width: 29px;
     height: 24px;
