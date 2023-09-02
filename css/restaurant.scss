@@ -30,6 +30,7 @@ body {
 .image {
     width: 100%;
     height: 275px;
+    object-fit: cover;
 }
 
 .menu {
@@ -37,6 +38,13 @@ body {
     margin-top: -60px;
     border-radius: 35px 35px 0 0;
     position: relative;
+
+    @media(min-width:1000px) {
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 }
 
 .letitre {
@@ -48,29 +56,51 @@ body {
     display: flex;
     padding-left: 10px;
     padding-top: 20px;
+
     // position: relative;
+    @media(min-width:1000px) {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 .coeurvide {
     font-size: 25px;
-    width: 27px;
-    height: 21px;
-    left: 290px;
+    width: 29px;
+    height: 24px;
+    right: 50px;
     position: absolute;
     opacity: 1;
-    top: 20px;
+    top: 24px;
+
+    @media (min-width: 1000px) {
+        right: 20%;
+    }
+
+    @media (min-width: 1400px) {
+        right: 140px;
+    }
 }
 
 .coeurplein {
     font-size: 25px;
     width: 29px;
     height: 24px;
-    left: 290px;
+    right: 50px;
     opacity: 0;
     position: absolute;
     transition-property: all;
     transition-duration: 3s;
-    top: 20px;
+    top: 24px;
+
+    @media (min-width: 1000px) {
+        right: 20%;
+    }
+
+    @media (min-width: 1400px) {
+        right: 140px;
+    }
 
     &:hover {
         opacity: 1;
@@ -144,7 +174,7 @@ body {
     text-overflow: ellipsis;
     position: relative;
     transition: all 1s;
-    
+
     &_clique {
         display: flex;
         width: 0px;
@@ -169,6 +199,7 @@ body {
     &:hover {
         transition: all 1s;
         padding-right: 57px;
+
         .lemenu_clique {
             width: 57px;
         }
@@ -212,8 +243,13 @@ body {
     font-size: 16px;
     line-height: 17px;
     text-decoration: none;
-    margin-left: 80px;
+    margin-left: 90px;
     margin-bottom: 30px;
+    border: none;
+
+    @media(min-width:1000px) {
+        margin-left: 35%;
+    }
 
     &:hover {
         opacity: 0.8;
@@ -224,10 +260,26 @@ body {
 .footer {
     background-color: #353535;
     color: white;
-    height: 186px;
-    // display: flex;
+    height: 114px;
     gap: 10px;
     padding-left: 0;
+
+    @media (min-width:1000px) {
+        height: 114px;
+    }
+
+    .inverse {
+        padding: 22px 25px;
+
+        @media(min-width: 1000px) {
+
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+    }
 
     .footer_image {
         filter: invert(100%);
@@ -238,11 +290,32 @@ body {
         margin-bottom: 5px;
         margin-top: 25px;
 
+        @media(min-width: 1000px) {
+            position: relative;
+            top: -10px;
+            margin-right: 2%;
+
+        }
+
+
     }
 
     .footerdetait {
         padding-left: 5%;
         line-height: 1.5;
+
+        @media(min-width:1000px) {
+            margin-top: 3px;
+            gap: 20px;
+            margin-right: 20px;
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+
+
+        }
     }
 
     .marge {

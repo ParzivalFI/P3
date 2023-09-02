@@ -59,18 +59,24 @@ body {
   height: 50px;
   text-align: center;
   display: flex;
-  align-items: center;
-  padding-left: 30%;
+  align-items: baseline;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 9%;
   background-color: #eaeaea;
 }
+@media (min-width: 1000px) {
+  .ville {
+    padding-left: 4%;
+  }
+}
 .ville .fa-solid {
-  padding-right: 5%;
+  padding-right: 4%;
 }
 
 .description {
   text-align: center;
   background-color: #F6F6F6;
-  height: 270px;
   padding-top: 1px;
 }
 
@@ -84,7 +90,21 @@ body {
 }
 
 .Texteville {
-  font-weight: 400;
+  height: 50px;
+  width: 170px;
+  font-size: 18px;
+  color: black;
+  background-color: #eaeaea;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .Texteville {
+    margin-left: -3%;
+  }
 }
 
 .button {
@@ -103,6 +123,10 @@ body {
   font-size: 16px;
   line-height: 17px;
   text-decoration: none;
+  border: none;
+  box-shadow: 0px 4px 10px 0px gray;
+  align-items: center;
+  display: inline-grid;
 }
 .button:hover {
   opacity: 0.8;
@@ -115,38 +139,57 @@ body {
 
 .fonct {
   padding-left: 5%;
+  padding-right: 5%;
 }
 @media (min-width: 1000px) {
   .fonct {
-    flex-direction: column;
-    padding: 0px;
-    align-items: center;
+    margin-left: 9%;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 }
 .fonct .choix {
   border: 2px solid #F2F2F2;
-  width: 335px;
+  width: 100%;
   height: 73px;
   border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: #F6F6F6;
   margin-bottom: 20px;
   box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 0.0235294118);
+}
+@media (min-width: 1000px) {
+  .fonct .choix {
+    margin-right: 2%;
+    width: 335px;
+  }
 }
 .fonct .choix .cercle {
   width: 24px;
   height: 24px;
   border-radius: 20px;
-  left: 10px;
-  position: absolute;
+  right: 13px;
+  position: relative;
   background-color: #9356DC;
   display: grid;
   place-items: center;
 }
+@media (min-width: 1000px) {
+  .fonct .choix .cercle {
+    left: auto;
+  }
+}
 .fonct .fa-solid {
   padding-right: 5%;
+}
+
+@media (min-width: 1000px) {
+  .lignetest {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
 }
 
 .h2 {
@@ -165,8 +208,13 @@ body {
   height: 100%;
   padding-left: 5%;
   padding-right: 5%;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1000px) {
+  .menu {
+    padding-left: 14%;
+    padding-right: 13%;
+  }
 }
 .menu .menu_cartes {
   display: grid;
@@ -176,7 +224,9 @@ body {
   .menu .menu_cartes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+    row-gap: 40px;
     width: 100%;
   }
 }
@@ -231,22 +281,22 @@ body {
   font-size: 25px;
   width: 27px;
   height: 21px;
-  left: 290px;
+  right: 22px;
   position: absolute;
   opacity: 1;
-  top: 20px;
+  top: 10px;
 }
 
 .coeurplein {
   font-size: 25px;
   width: 29px;
   height: 24px;
-  left: 290px;
+  right: 22px;
   opacity: 0;
   position: absolute;
   transition-property: all;
   transition-duration: 3s;
-  top: 20px;
+  top: 10px;
 }
 .coeurplein:hover {
   opacity: 1;
@@ -260,9 +310,24 @@ body {
 .footer {
   background-color: #353535;
   color: white;
-  height: 186px;
   gap: 10px;
   padding-left: 0;
+}
+@media (min-width: 1000px) {
+  .footer {
+    height: 114px;
+  }
+}
+.footer .inverse {
+  padding: 22px 25px;
+}
+@media (min-width: 1000px) {
+  .footer .inverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 .footer .footer_image {
   filter: invert(100%);
@@ -273,9 +338,28 @@ body {
   margin-bottom: 5px;
   margin-top: 25px;
 }
+@media (min-width: 1000px) {
+  .footer .footer_image {
+    position: relative;
+    top: -10px;
+    margin-right: 2%;
+  }
+}
 .footer .footerdetait {
   padding-left: 5%;
   line-height: 1.5;
+}
+@media (min-width: 1000px) {
+  .footer .footerdetait {
+    margin-top: 3px;
+    gap: 20px;
+    margin-right: 20px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
 }
 .footer .marge {
   margin-left: 35px;
