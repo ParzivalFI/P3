@@ -6,6 +6,8 @@ body {
     font-family: "roboto", sans-serif;
 }
 
+// ************************* le header  ********************************
+
 .logo {
     text-align: center;
     margin-top: 30px;
@@ -33,6 +35,8 @@ body {
     object-fit: cover;
 }
 
+// ************************* debut du menu  ********************************
+
 .menu {
     background-color: #F6F6F6;
     margin-top: -60px;
@@ -54,10 +58,9 @@ body {
 .Titremenu {
     font-family: "Shrikhand", sans-serif;
     display: flex;
-    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 20px;
 
-    // position: relative;
     @media(min-width:1000px) {
         display: flex;
         justify-content: center;
@@ -65,6 +68,7 @@ body {
 
 }
 
+// ************************* les likes  ********************************
 .coeurvide {
     font-size: 25px;
     width: 29px;
@@ -167,6 +171,7 @@ body {
     }
 }
 
+
 .lemenu {
     overflow: hidden;
     padding: 10px;
@@ -226,7 +231,7 @@ body {
     font-weight: 800;
     padding-right: 5px;
 }
-
+// ************************* button  ********************************
 .button {
     width: 186px;
     height: 50px;
@@ -243,24 +248,26 @@ body {
     font-size: 16px;
     line-height: 17px;
     text-decoration: none;
-    margin-left: 90px;
+    
     margin-bottom: 30px;
     border: none;
 
-    @media(min-width:1000px) {
-        margin-left: 35%;
-    }
-
+    
     &:hover {
         opacity: 0.8;
     }
 
 }
 
+.centre{
+    text-align: center;
+}
+
+// ************************* le footer  ********************************
+
 .footer {
     background-color: #353535;
     color: white;
-    height: 114px;
     gap: 10px;
     padding-left: 0;
 

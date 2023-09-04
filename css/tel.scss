@@ -6,6 +6,8 @@
     font-family: "roboto", sans-serif;
   }
 
+  /* ******************************* chargement ******************************* */
+
   .chargement {
     display: block;
     position: fixed;
@@ -47,6 +49,8 @@
       transform: translate(-50%, -50%) rotate(360deg);
     }
   }
+
+/* ******************************* le header ******************************* */
 
 
   .logo {
@@ -97,9 +101,7 @@
     font-size: 30px;
   }
 
-  // .Texteville {
-  //   font-weight: 400;
-  // }
+  
 
   .Texteville {
     height: 50px;
@@ -117,19 +119,6 @@
       margin-left: -3%;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -168,22 +157,6 @@
     padding-left: 5%;
   }
 
-  // .rectancleFonct {
-  //   width: 318px;
-  //   height: 72px;
-  //   background-color: #F6F6F6;
-  //   padding: 20px 20px;
-  //   margin-bottom: 20px;
-  //   border-radius: 40px;
-  //   display: flex;
-  //   justify-content: space-around;
-  //   align-items: center;
-  //   box-shadow: 0px 4px 10px 0px black;
-
-  // }
-
-
-
   .fonct {
 
     padding-left: 5%;
@@ -212,15 +185,13 @@
         width: 335px;
       }
 
-
-
-
       .cercle {
         width: 24px;
         height: 24px;
         border-radius: 20px;
         right: 13px;
         position: relative;
+        color: white;
         background-color: #9356DC;
         display: grid;
         place-items: center;
@@ -351,10 +322,12 @@
     }
   }
 
+  /* ******************************* les likes ******************************* */
+
   .coeurvide {
     font-size: 25px;
-    width: 27px;
-    height: 21px;
+    width: 29px;
+    height: 24px;
     right: 22px;
     position: absolute;
     opacity: 1;
@@ -382,6 +355,7 @@
     }
   }
 
+  /* ******************************* le footer ******************************* */
   .footer {
     background-color: #353535;
     color: white;

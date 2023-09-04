@@ -6,6 +6,7 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+/* ******************************* chargement ******************************* */
 .chargement {
   display: block;
   position: fixed;
@@ -44,6 +45,7 @@ body {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+/* ******************************* le header ******************************* */
 .logo {
   text-align: center;
   margin-top: 30px;
@@ -171,6 +173,7 @@ body {
   border-radius: 20px;
   right: 13px;
   position: relative;
+  color: white;
   background-color: #9356DC;
   display: grid;
   place-items: center;
@@ -277,10 +280,11 @@ body {
   margin-left: 18px;
 }
 
+/* ******************************* les likes ******************************* */
 .coeurvide {
   font-size: 25px;
-  width: 27px;
-  height: 21px;
+  width: 29px;
+  height: 24px;
   right: 22px;
   position: absolute;
   opacity: 1;
@@ -307,6 +311,7 @@ body {
   color: transparent;
 }
 
+/* ******************************* le footer ******************************* */
 .footer {
   background-color: #353535;
   color: white;

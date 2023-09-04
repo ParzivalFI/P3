@@ -55,7 +55,7 @@ body {
 .Titremenu {
   font-family: "Shrikhand", sans-serif;
   display: flex;
-  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 20px;
 }
 @media (min-width: 1000px) {
@@ -274,23 +274,20 @@ body {
   font-size: 16px;
   line-height: 17px;
   text-decoration: none;
-  margin-left: 90px;
   margin-bottom: 30px;
   border: none;
-}
-@media (min-width: 1000px) {
-  .button {
-    margin-left: 35%;
-  }
 }
 .button:hover {
   opacity: 0.8;
 }
 
+.centre {
+  text-align: center;
+}
+
 .footer {
   background-color: #353535;
   color: white;
-  height: 114px;
   gap: 10px;
   padding-left: 0;
 }
