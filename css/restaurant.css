@@ -55,12 +55,13 @@ body {
 .Titremenu {
   font-family: "Shrikhand", sans-serif;
   display: flex;
-  padding-right: 10px;
+  padding-left: 15px;
   padding-top: 20px;
 }
 @media (min-width: 1000px) {
   .Titremenu {
     display: flex;
+    padding-right: 50px;
     justify-content: center;
   }
 }
